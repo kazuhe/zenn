@@ -1,6 +1,6 @@
 ---
 title: "Web Storageの基本とclass構文を用いた汎用的な例"
-emoji: "🙆"
+emoji: "💾"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["javascript", "typescript", "webstorage"]
 published: true
