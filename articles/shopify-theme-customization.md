@@ -68,16 +68,16 @@ Shopify Theme Kitを使う場合ローカルで`config/settings_data.json`を保
 コンポーネントの概念があるか不明ですが、なるべく各機能やパーツを分離して記述したいのでVue.jsでいうSFCっぽいファイル構成にしています。簡単な例を紹介します。
 各ページで使用するメインタイトルをコンポーネント化したファイルが下記になります。
 ```liquid:snippets/page-header.liquid
-<div class="c-page_header">
-  <h2>{{ title }}</h2>
-</div>
-
 {% style %}
 .c-page_header {
   background: #333;
   /* ~~~ */
 }
 {% endstyle %}
+
+<div class="c-page_header">
+  <h2>{{ title }}</h2>
+</div>
 ```
 `{{ title }}`は下記の呼び出し元のファイルから渡されます。
 ```liquid:呼び出し元のファイル
@@ -98,6 +98,12 @@ Shopify Theme Kitを使う場合ローカルで`config/settings_data.json`を保
 ```
 上記ファイルによって構成されているページのカスタマイズ画面で設定されたページタイトルを`snippets/page-header.liquid`に渡しています。
 注意点としては、このSFCっぽい方法だと**SCSSなどは使うことができない**のでコードの分割とCSSの書きやすさはトレードオフかなと思います。
+
+:::message alert
+**【追記】**
+上記のSFCっぽいファイル構成だとbodyタグの中でcssを読み込んでしまうので、W3Cのパリデーターチェックで下記の様なErrorが出てしまいます。`{% style %}`を先に記述することで初期表示のズレ等は起きませんが、厳密なコーディングが必要な場合は注意してください。
+`Error: Element style not allowed as child of element div in this context. (Suppressing further errors from this subtree.)`
+:::
 
 ## CSSの取り扱いについて
 Shopifyは公式でSassの使用を非推奨としています。
