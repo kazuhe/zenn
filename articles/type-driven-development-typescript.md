@@ -2,8 +2,8 @@
 title: "TypeScriptで型駆動開発"
 emoji: "🦅"
 type: "tech"
-topics: ["typescript", "vue"]
-published: false
+topics: ["javascript", "typescript", "vue", "jest", "test"]
+published: true
 ---
 
 # はじめに
