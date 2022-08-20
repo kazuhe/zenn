@@ -3,7 +3,7 @@ title: "Nuxt3 + GitHub Pages で ﾎｰﾑﾍﾟｰｼﾞ兼 ﾌﾞﾛｸﾞを�
 emoji: "🏠"
 type: "tech"
 topics: ["nuxtjs", "typescript", "github"]
-published: false
+published: true
 ---
 
 # はじめに
