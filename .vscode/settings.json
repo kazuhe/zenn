@@ -1,0 +1,6 @@
+{
+  "markdownlint.config": {
+    "single-h1": false,
+    "no-bare-urls": false
+  }
+}
