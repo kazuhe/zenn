@@ -1,5 +1,5 @@
 ---
-title: "Nuxt3 + GitHub Pages で ﾎｰﾑﾍﾟｰｼﾞ兼 ﾌﾞﾛｸﾞを作成してみた"
+title: "Nuxt3 + GitHub Pages でホームページ兼ブログを作成してみた"
 emoji: "🏠"
 type: "tech"
 topics: ["nuxtjs", "typescript", "github"]
@@ -28,7 +28,7 @@ https://zenn.dev/kazuhe/scraps/3dd0d2c83c2e4e
 
 実際のコードは以下のリポジトリです。
 
-https://github.com/kazuhe/kazuhe.github.io
+https://github.com/kazuhe/kazuhe.github.io/tree/2f54da4094aac53653fd5c2c48ce784f3fde74aa
 
 # ポイント
 
